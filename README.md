@@ -1,21 +1,24 @@
 # EV Battery State of Health (SOH) Prediction
 
 ## Overview
-An electric vehicle (EV) battery health prediction project that uses machine learning to support battery State of Health (SOH) estimation and related diagnostics. The project includes a Streamlit-based interface for presenting battery information and prediction results.
+
+EV Battery State of Health (SOH) Prediction is a machine learning project designed to support electric vehicle battery health estimation and diagnostics. It includes a multi-page web application built with Streamlit to present battery health information and related features.
 
 ## Features
+
 - Machine-learning-based battery State of Health (SOH) prediction.
-- Battery diagnostics and remaining useful life (RUL)-related functionality.
+- Battery diagnostics and Remaining Useful Life (RUL)-related functionality.
 - EV service center information.
-- Interactive multi-page web interface built with Streamlit.
+- Interactive multi-page Streamlit web interface.
 - Vehicle-related images and visual information.
 
 ## Technologies Used
+
 - **Programming Language:** Python
 - **Machine Learning:** Scikit-learn
 - **Data Processing:** Pandas
 - **Web Application:** Streamlit
-- **Model Storage:** Pickle (`.pkl` files)
+- **Model Storage:** Pickle (`.pkl`)
 - **Data Storage:** CSV
 
 ## Project Structure
@@ -24,15 +27,16 @@ An electric vehicle (EV) battery health prediction project that uses machine lea
 EV-Battery-SOH-Prediction/
 ├── Home.py
 ├── model_training.py
-├── 1_Daily_Health_Check.py
-├── 2_Advanced_Battery_Diagnostics.py
-├── 3_Find_Nearby_EV_Service.py
-├── 4_About_This_Project.py
+├── pages/
+│   ├── 1_Daily_Health_Check.py
+│   ├── 2_Advanced_Battery_Diagnostics.py
+│   ├── 3_Find_Nearby_EV_Service.py
+│   └── 4_About_This_Project.py
+├── assets/
 ├── ev_service_centers.csv
 ├── battery_soh_model.pkl
 ├── battery_rul_model.pkl
-├── README.md
-└── assets/ and vehicle images
+└── README.md
 ```
 
 ## Getting Started
@@ -44,15 +48,13 @@ git clone https://github.com/Khimasree/EV-Battery-SOH-Prediction.git
 cd EV-Battery-SOH-Prediction
 ```
 
-### 2. Install the dependencies
-
-Install the Python packages required by the project. For example:
+### 2. Install dependencies
 
 ```bash
 pip install streamlit pandas scikit-learn
 ```
 
-Additional packages may be required depending on the imports used in the project files.
+Install any additional packages required by the project's Python imports.
 
 ### 3. Run the application
 
@@ -60,10 +62,12 @@ Additional packages may be required depending on the imports used in the project
 streamlit run Home.py
 ```
 
-The application should open in your browser when the required dependencies, data files, and compatible trained models are available.
+The application should open in your browser when the required dependencies, model files, and other project resources are available.
 
 ## Project Purpose
-This project demonstrates the application of Python and machine learning concepts to an electric vehicle battery health use case. It brings together model training, prediction, battery diagnostics, and a Streamlit-based user interface.
+
+This project demonstrates the application of Python and machine learning to an electric vehicle battery health use case. It brings together model training, prediction, battery diagnostics, and an interactive Streamlit interface.
 
 ## Repository
+
 [View the source code on GitHub](https://github.com/Khimasree/EV-Battery-SOH-Prediction)
